@@ -21,3 +21,6 @@ ansible [core 2.15.13]
   jinja version = 3.1.6
   libyaml = True
 
+(ansible) $ deactivate
+$ exit
+$ vagrant destroy -f
