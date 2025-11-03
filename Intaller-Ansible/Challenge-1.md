@@ -1,19 +1,52 @@
-# Challenge n 1
+# Challenge n° 1 - Installation d'Ansible sur Ubuntu
 
-- Démarrez la VM ubuntu depuis le répertoire atelier-01.
+## Objectif
+
+Installer Ansible sur une VM Ubuntu en utilisant le paquet officiel fourni par la distribution.
+
+## Énoncé du challenge
+
+- Démarrez la VM `ubuntu` depuis le répertoire `atelier-01`.
 - Connectez-vous à cette VM.
 - Rafraîchissez les informations sur les paquets.
-- Recherchez le paquet ansible avec les options qui vont bien.
+- Recherchez le paquet `ansible` avec les options qui vont bien.
 - Installez le paquet officiel fourni par la distribution.
 - Vérifiez si l'installation s'est bien déroulée.
 - Notez la version d'Ansible.
 - Déconnectez-vous et supprimez la VM.
 
+## Solution
 
+### Démarrage de la VM
+
+Démarrez la VM Ubuntu :
+
+```
 $ vagrant up ubuntu
+```
+
+### Connexion à la VM
+
+Connectez-vous à cette VM :
+
+```
 $ vagrant ssh ubuntu
+```
+
+### Mise à jour des informations sur les paquets
+
+Rafraîchissez les informations sur les paquets :
+
+```
 $ sudo apt update
-vagrant@ubuntu:~$ apt search ansible
+```
+
+### Recherche du paquet Ansible
+
+Recherchez le paquet `ansible` avec les options appropriées :
+
+```
+$ apt search ansible
 Sorting... Done
 Full Text Search... Done
 ansible/jammy 2.10.7+merged+base+2.10.8+dfsg-1 all
@@ -75,10 +108,21 @@ shade-inventory/jammy 1.31.0-0ubuntu2 all
 
 vim-syntastic/jammy 3.10.0-2 all
   Syntax checking hacks for vim
+```
 
+### Installation d'Ansible
 
+Installez le paquet officiel fourni par la distribution :
+
+```
 $ sudo apt install -y ansible
+```
 
+### Vérification de l'installation
+
+Vérifiez si l'installation s'est bien déroulée :
+
+```
 $ ansible --version
 ansible 2.10.8
   config file = None
@@ -86,12 +130,29 @@ ansible 2.10.8
   ansible python module location = /usr/lib/python3/dist-packages/ansible
   executable location = /usr/bin/ansible
   python version = 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]
+```
 
+**Version d'Ansible installée :** `2.10.8`
 
-vagrant@ubuntu:~$ exit
+### Déconnexion et suppression de la VM
+
+Quittez la VM :
+
+```
+$ exit
 logout
 Connection to 127.0.0.1 closed.
-[ema@localhost:atelier-01] $ vagrant destroy -f ubuntu
+```
+
+Supprimez la VM :
+
+```
+$ vagrant destroy -f ubuntu
 ==> ubuntu: Forcing shutdown of VM...
 ==> ubuntu: Destroying VM and associated drives...
+```
+
+## Conclusion
+
+Le paquet `ansible` version **2.10.8** a été installé avec succès depuis les dépôts officiels d'Ubuntu Jammy (22.04).
 
