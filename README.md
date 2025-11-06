@@ -1,18 +1,6 @@
 # IMT-IAC - Infrastructure as Code avec Ansible
 
-> Nils Saadi INFRES 17 DL
-> 📚 Compte-rendu des travaux pratiques du cours Infrastructure as Code (IaC)  
-> 🎓 IMT Mines Alès - 2025
-
-## Table des matières
-
-- [À propos](#à-propos)
-- [Structure du projet](#structure-du-projet)
-- [Prérequis](#prérequis)
-- [Contenu des ateliers](#contenu-des-ateliers)
-- [Technologies utilisées](#technologies-utilisées)
-- [Concepts clés abordés](#concepts-clés-abordés)
-- [Auteur](#auteur)
+> Nils Saadi INFRES 17 DL - IMT Mines Alès - 2025
 
 ## À propos
 
