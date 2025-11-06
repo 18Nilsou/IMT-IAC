@@ -1,8 +1,4 @@
-# Authentification sur les Target Hosts - À vous de jouer !
-
-## Objectif
-
-Mettre en place l'authentification SSH par clé sur trois machines Ubuntu pour permettre à Ansible de s'y connecter sans mot de passe.
+# Authentification - À vous de jouer !
 
 ## Énoncé du challenge
 
@@ -217,11 +213,11 @@ target02 | SUCCESS => {
 
 ## Résultat
 
-✅ L'authentification par clé SSH est correctement configurée sur les trois Target Hosts.
+L'authentification par clé SSH est correctement configurée sur les trois Target Hosts.
 
-✅ Ansible peut se connecter sans mot de passe à toutes les machines.
+Ansible peut se connecter sans mot de passe à toutes les machines.
 
-✅ Le module `ping` d'Ansible retourne `SUCCESS` pour chaque hôte.
+Le module `ping` d'Ansible retourne `SUCCESS` pour chaque hôte.
 
 ## Conclusion
 
