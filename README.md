@@ -34,18 +34,6 @@ IMT-IAC/
 └── README.md                    # Ce fichier
 ```
 
-## Prérequis
-
-Pour reproduire les ateliers, vous aurez besoin de :
-
-- **Vagrant** (>= 2.2.0) - Gestion des machines virtuelles
-- **VirtualBox** ou autre provider compatible
-- **Git** - Gestion de version
-- Connaissances de base en :
-  - Linux et ligne de commande
-  - Administration système
-  - SSH
-
 ## Contenu des ateliers
 
 ### Installer-Ansible/
